@@ -28,6 +28,11 @@ class LuckyAppState extends State<LuckyApp>
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      theme: new ThemeData(
+        primarySwatch: Colors.orange,
+        primaryColor: Colors.grey[100],
+        primaryColorBrightness: Brightness.light,
+      ),
       home: new Scaffold(
         body: new TabBarView(
           controller: controller,
@@ -47,21 +52,21 @@ class LuckyAppState extends State<LuckyApp>
             indicatorColor: Colors.white,
             tabs: [
               new Tab(
-                text: "首页",
+                text: "首页1",
                 icon: new Icon(
-                  Icons.movie,
+                  Icons.account_box,
                 ),
               ),
               new Tab(
                 text: "赚赚",
                 icon: new Icon(
-                  Icons.book,
+                  Icons.account_box,
                 ),
               ),
               new Tab(
                 text: "我的",
                 icon: new Icon(
-                  Icons.access_alarm,
+                  Icons.account_box,
                 ),
               ),
             ],
