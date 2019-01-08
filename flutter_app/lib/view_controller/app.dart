@@ -52,7 +52,7 @@ class LuckyAppState extends State<LuckyApp>
             indicatorColor: Colors.white,
             tabs: [
               new Tab(
-                text: "首页1",
+                text: "首页",
                 icon: new Icon(
                   Icons.account_box,
                 ),
