@@ -7,12 +7,13 @@ import 'package:flutter_study/widget/drawer_page.dart';
 import 'package:flutter_study/widget/tab_android_page.dart';
 import 'package:flutter_study/widget/tab_girl_page.dart';
 import 'package:flutter_study/widget/tab_ios_page.dart';
+
 class HomePage extends StatefulWidget {
   @override
-  _HomePageState createState() => new _HomePageState();
+  HomePageState createState() => new HomePageState();
 }
 
-class _HomePageState extends State<HomePage>
+class HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
 
   final _key = new GlobalKey<ScaffoldState>();
@@ -72,9 +73,9 @@ class _HomePageState extends State<HomePage>
             .appTitle),
         centerTitle: true,
       ), //头部的标题AppBar
-      drawer: new Drawer(
-        child: new DrawerPage(),
-      ),
+//      drawer: new Drawer(
+//        child: new DrawerPage(),
+//      ),
       bottomNavigationBar: new BottomNavigationBar(
         items: [
           new BottomNavigationBarItem(
